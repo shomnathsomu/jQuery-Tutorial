@@ -1,23 +1,23 @@
-#jQuery-Tutorial
+# jQuery-Tutorial
 
 ## What we will learn
--- What jQuery is and how we use it
--- jQuery and the DOM using CSS selectors
--- Adding, removing and changing HTML
--- jQuery event handling
--- Animating your page with jQuery
--- Examples and plugins
+1. What jQuery is and how we use it
+2. jQuery and the DOM using CSS selectors
+3. Adding, removing and changing HTML
+4. jQuery event handling
+5. Animating your page with jQuery
+6. Examples and plugins
 
 ## jQuery
--- Massive
--- Free
--- Open Source
--- JavaScript Library
--- It's not a programming language in it's own rights
+1. Massive
+2. Free
+3. Open Source
+4. JavaScript Library
+5. It's not a programming language in it's own rights
 
 ## Benefits of jQuery
--- Makes working with the DOM easier
--- Makes animations easier
--- Makes event handling easier
--- Makes AJAX really simple
--- Plus loads more..
+1. Makes working with the DOM easier
+2. Makes animations easier
+3. Makes event handling easier
+4. Makes AJAX really simple
+5. Plus loads more..
