@@ -355,6 +355,7 @@ section::after {
     padding: 0 10px;
     width: 40px;
     height: 30px;
+    text-align: center;
 }
 
 #social-nav li i {
