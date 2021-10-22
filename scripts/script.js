@@ -34,3 +34,30 @@
 // $("div[class]").css({border: "2px solid pink"});
 // $("img[alt=e-commerce]").css({border: "2px solid red"});
 
+// ////////////////////////////////////////////
+// ////// Traversing the DOM with jQuery //////
+// ////////////////////////////////////////////
+
+// $("#contact-methods").next().css({border: "2px solid blue"});
+// $("img[alt=map]").prev().css({border: "2px solid red"});
+
+// $(".banner-title").parent().css({border: "3px solid red"});
+// $("#social-nav").children().css({border: "2px solid green"});
+
+$("#contact").find(".twitter").css({border: "2px solid purple", background: "yellow"});
+$(".facebook").closest("section").css({border: "2px solid black"});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
