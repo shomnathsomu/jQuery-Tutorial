@@ -52,16 +52,22 @@
 // ///////////// jQuery Chaining //////////////
 // ////////////////////////////////////////////
 
-$("#contact-methods").css({border: "2px solid blue"})
-.next().css({border: "2px solid green"})
-.closest("section").css({border: "2px solid red"});
+// $("#contact-methods").css({border: "2px solid blue"})
+// .next().css({border: "2px solid green"})
+// .closest("section").css({border: "2px solid red"});
 
 
+// ////////////////////////////////////////////
+// ////// Adding Content using jQuery  ////////
+// ////////////////////////////////////////////
 
+var tweet = "<div style='margin: 20px 0; padding: 10px; background: #eee;'>The Big Fight Live: Ham vs Cheese</div>";
+var tweetText = "Hello world!";
 
-
-
-
-
+// $("#tweets div").append(tweet);
+// $("#tweets div p").prepend(tweet);
+// $("#tweets div p").after(tweet);
+// $("#tweets div").html(tweet);
+$("#tweets div p").text(tweetText);
 
 
