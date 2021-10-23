@@ -274,12 +274,12 @@ section::after {
 /* ///////////////// STYLING CLIENTS ////////////////////// */
 /* //////////////////////////////////////////////////////// */
 
-#clients, #contact {
+#clients, #contact, #tweets {
     border-top: 1px solid #cccccc;
     padding-top: 30px;
 }
 
-#clients h2, #contact h2 {
+#clients h2, #contact h2, #tweets h2 {
     background: green;
     width: 250px;
     text-align: center;
