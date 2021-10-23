@@ -44,13 +44,17 @@
 // $(".banner-title").parent().css({border: "3px solid red"});
 // $("#social-nav").children().css({border: "2px solid green"});
 
-$("#contact").find(".twitter").css({border: "2px solid purple", background: "yellow"});
-$(".facebook").closest("section").css({border: "2px solid black"});
+// $("#contact").find(".twitter").css({border: "2px solid purple", background: "yellow"});
+// $(".facebook").closest("section").css({border: "2px solid black"});
 
 
+// ////////////////////////////////////////////
+// ///////////// jQuery Chaining //////////////
+// ////////////////////////////////////////////
 
-
-
+$("#contact-methods").css({border: "2px solid blue"})
+.next().css({border: "2px solid green"})
+.closest("section").css({border: "2px solid red"});
 
 
 
