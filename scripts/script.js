@@ -78,24 +78,31 @@ var tweetText = "Hello world!";
 // $("section").unwrap();
 // $("section").wrapAll("<div>");
 
-var wrapper = "<div class='wrapper'>";
-var button = $(".button");
-var wrapped = true;
+// var wrapper = "<div class='wrapper'>";
+// var button = $(".button");
+// var wrapped = true;
 
-button[0].onclick = function(){
-    if(wrapped){
-        $("section").unwrap();
-        wrapped = false;
-        button.text("Wrap");
-    } else{
-        $("section").wrapAll(wrapper);
-        wrapped = true;
-        button.text("Unwrap");
-    }
-};
+// button[0].onclick = function(){
+//     if(wrapped){
+//         $("section").unwrap();
+//         wrapped = false;
+//         button.text("Wrap");
+//     } else{
+//         $("section").wrapAll(wrapper);
+//         wrapped = true;
+//         button.text("Unwrap");
+//     }
+// };
 
+// ////////////////////////////////////////////
+// /////////// Removing Content  //////////////
+// ////////////////////////////////////////////
 
+// empties the inner html of an element
+// $(".button").empty();
+$("#points-of-sale").empty();
 
-
-
+// removes the element completely
+$("#contact img").remove();
+$("#social-nav").css({top: "10px"});
 
