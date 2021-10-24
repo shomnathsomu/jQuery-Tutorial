@@ -68,6 +68,34 @@ var tweetText = "Hello world!";
 // $("#tweets div p").prepend(tweet);
 // $("#tweets div p").after(tweet);
 // $("#tweets div").html(tweet);
-$("#tweets div p").text(tweetText);
+// $("#tweets div p").text(tweetText);
+
+// ////////////////////////////////////////////
+// ///////// Wrap and Unwrap elements  ////////
+// ////////////////////////////////////////////
+
+// $("section").wrap("<div>");
+// $("section").unwrap();
+// $("section").wrapAll("<div>");
+
+var wrapper = "<div class='wrapper'>";
+var button = $(".button");
+var wrapped = true;
+
+button[0].onclick = function(){
+    if(wrapped){
+        $("section").unwrap();
+        wrapped = false;
+        button.text("Wrap");
+    } else{
+        $("section").wrapAll(wrapper);
+        wrapped = true;
+        button.text("Unwrap");
+    }
+};
+
+
+
+
 
 
