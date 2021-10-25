@@ -100,9 +100,16 @@ var tweetText = "Hello world!";
 
 // empties the inner html of an element
 // $(".button").empty();
-$("#points-of-sale").empty();
+// $("#points-of-sale").empty();
 
 // removes the element completely
-$("#contact img").remove();
-$("#social-nav").css({top: "10px"});
+// $("#contact img").remove();
+// $("#social-nav").css({top: "10px"});
 
+// ////////////////////////////////////////////
+// ///////// Changing Attributes  /////////////
+// ////////////////////////////////////////////
+
+$("#contact img").removeAttr("alt");
+$("#contact img").attr("alt", "Location");
+console.log($("#contact img").attr("src"));
