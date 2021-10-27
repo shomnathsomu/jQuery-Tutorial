@@ -110,18 +110,32 @@ var tweetText = "Hello world!";
 // ///////// Changing Attributes  /////////////
 // ////////////////////////////////////////////
 
-$("#contact img").removeAttr("alt");
-$("#contact img").attr("alt", "Location");
-console.log($("#contact img").attr("src"));
+// $("#contact img").removeAttr("alt");
+// $("#contact img").attr("alt", "Location");
+// console.log($("#contact img").attr("src"));
 
 // ////////////////////////////////////////////
 // /////////// CSS with jQuery  ///////////////
 // ////////////////////////////////////////////
 
-console.log($("#social-nav").css("position"));
+// console.log($("#social-nav").css("position"));
 // $("#social-nav").css("top", "-50px").css("left", "30px");
-$("#social-nav").css({
-    "top" : "-50px",
-    "left" : "30px",
-    "opacity" : 0.7
-});
+// $("#social-nav").css({
+//    "top" : "-50px",
+//    "left" : "30px",
+//    "opacity" : 0.7
+// });
+
+// ////////////////////////////////////////////
+// ////// Adding and Removing Classes /////////
+// ////////////////////////////////////////////
+
+// $("header .wrapper").removeClass("wrapper");
+// $("header > div").addClass("wrapper");
+
+var button = $("#lead-banner a");
+
+button[0].onclick = function(){
+    $("#points-of-sale").toggleClass("open");
+    return false;
+};
