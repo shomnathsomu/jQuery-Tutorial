@@ -283,20 +283,20 @@ section::after {
     line-height: 1.4em;
 }
 
-#points-of-sale {
+/* #points-of-sale {
 
     height: 0;
 
     overflow: hidden;
 
-}
+} */
 
 
-.open {
+/* .open {
 
     height: auto !important;
 
-}
+} */
 
 /* ///////////////////////////////////////////////////////// */
 /* ///////////////// STYLING CLIENTS ////////////////////// */
