@@ -157,7 +157,23 @@ var tweetText = "Hello world!";
 // //////////// Events Helpers ////////////////
 // ////////////////////////////////////////////
 
-$("#lead-banner").dblclick(function(){
-    alert("you double clicked me!");
-    $("#lead-banner").off("dblclick");
+// $("#lead-banner").dblclick(function(){
+//     alert("you double clicked me!");
+//     $("#lead-banner").off("dblclick");
+// });
+
+
+// ////////////////////////////////////////////
+// //// Document Ready vs Window load /////////
+// ////////////////////////////////////////////
+
+// Before doing that, please move the scripts tags
+// From body bottom to inside head tag
+
+$(document).on("ready", function(){
+
+});
+
+$(window).load(function(){
+
 });
