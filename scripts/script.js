@@ -144,10 +144,20 @@ var tweetText = "Hello world!";
 // ////// Binding & Unbinding Events  /////////
 // ////////////////////////////////////////////
 
-var myLis = $("#points-of-sale li");
+// var myLis = $("#points-of-sale li");
 
-myLis.on("click", function(){
-    $(this).css({"background": "pink"});
+// myLis.on("click", function(){
+//     $(this).css({"background": "pink"});
 
-    myLis.off("click");
+//     myLis.off("click");
+// });
+
+
+// ////////////////////////////////////////////
+// //////////// Events Helpers ////////////////
+// ////////////////////////////////////////////
+
+$("#lead-banner").dblclick(function(){
+    alert("you double clicked me!");
+    $("#lead-banner").off("dblclick");
 });
