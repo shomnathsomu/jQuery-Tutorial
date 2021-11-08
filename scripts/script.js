@@ -170,10 +170,24 @@ var tweetText = "Hello world!";
 // Before doing that, please move the scripts tags
 // From body bottom to inside head tag
 
-$(document).on("ready", function(){
+// $(document).on("ready", function(){
 
+// });
+
+// $(window).load(function(){
+
+// });
+
+// ////////////////////////////////////////////
+// //////////// Event Object //////////////////
+// ////////////////////////////////////////////
+
+
+$("*").on("click", function(e){
+    console.log(e.target);
+    console.log("The event type is: " + e.type);
+    console.log("X co-ordinate of the event is: " + e.pageX);
+    e.stopPropagation();
 });
 
-$(window).load(function(){
 
-});
