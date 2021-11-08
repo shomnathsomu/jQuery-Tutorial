@@ -183,11 +183,22 @@ var tweetText = "Hello world!";
 // ////////////////////////////////////////////
 
 
-$("*").on("click", function(e){
-    console.log(e.target);
-    console.log("The event type is: " + e.type);
-    console.log("X co-ordinate of the event is: " + e.pageX);
-    e.stopPropagation();
-});
+// $("*").on("click", function(e){
+//     console.log(e.target);
+//     console.log("The event type is: " + e.type);
+//     console.log("X co-ordinate of the event is: " + e.pageX);
+//     e.stopPropagation();
+// });
 
+// ////////////////////////////////////////////
+// //////////// jQuery animation //////////////
+// ////////////////////////////////////////////
+
+function finish(){
+    alert("Animation completed!");
+}
+
+$("section > h2").on("click", function(){
+    $(this).animate({"width": "500px"}, 5000, "linear", finish);
+});
 
