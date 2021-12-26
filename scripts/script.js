@@ -200,5 +200,6 @@ function finish(){
 
 $("section > h2").on("click", function(){
     $(this).animate({"width": "500px"}, 5000, "linear", finish);
+    // we can also use the "swing" parameter which looks a bit more natural
 });
 
