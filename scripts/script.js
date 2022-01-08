@@ -167,10 +167,14 @@ var tweetText = "Hello world!";
 // //// Document Ready vs Window load /////////
 // ////////////////////////////////////////////
 
-// Before doing that, please move the scripts tags
-// From body bottom to inside head tag
+// Before doing that, please move the scripts tag 
+// from the body bottom to the head tag inside.
 
 // $(document).on("ready", function(){
+
+// });
+
+// $(document).ready(function(){
 
 // });
 
@@ -194,12 +198,29 @@ var tweetText = "Hello world!";
 // //////////// jQuery animation //////////////
 // ////////////////////////////////////////////
 
-function finish(){
-    alert("Animation completed!");
-}
+// function finish(){
+//     alert("Animation completed!");
+// }
+
+// $("section > h2").on("click", function(){
+//     $(this).animate({"width": "500px"}, 5000, "swing", finish);
+//     // we can also use the "swing" parameter which looks a bit more natural
+//     $(this).animate({"opacity": "0.5"});
+// });
+
+// ////////////////////////////////////////////
+// //////// Fading Elements In & Out //////////
+// ////////////////////////////////////////////
 
 $("section > h2").on("click", function(){
-    $(this).animate({"width": "500px"}, 5000, "linear", finish);
-    // we can also use the "swing" parameter which looks a bit more natural
+    // $(this).fadeOut(2000).fadeIn(700);
+    $(this).fadeTo(500, 0.2)
+           .fadeTo(500, 0.7)
+           .fadeTo(500, 0.2)
+           .fadeTo(500, 0.7)
+           .fadeTo(500, 0.2)
+           .fadeTo(500, 0.7)
+           .fadeTo(500, 0.2)
+           .fadeTo(500, 0.7);
 });
 
