@@ -212,15 +212,26 @@ var tweetText = "Hello world!";
 // //////// Fading Elements In & Out //////////
 // ////////////////////////////////////////////
 
+// $("section > h2").on("click", function(){
+//     // $(this).fadeOut(2000).fadeIn(700);
+//     $(this).fadeTo(500, 0.2)
+//            .fadeTo(500, 0.7)
+//            .fadeTo(500, 0.2)
+//            .fadeTo(500, 0.7)
+//            .fadeTo(500, 0.2)
+//            .fadeTo(500, 0.7)
+//            .fadeTo(500, 0.2)
+//            .fadeTo(500, 0.7);
+// });
+
+// ////////////////////////////////////////////
+// ////////// Hide and Show Elements //////////
+// ////////////////////////////////////////////
+
 $("section > h2").on("click", function(){
-    // $(this).fadeOut(2000).fadeIn(700);
-    $(this).fadeTo(500, 0.2)
-           .fadeTo(500, 0.7)
-           .fadeTo(500, 0.2)
-           .fadeTo(500, 0.7)
-           .fadeTo(500, 0.2)
-           .fadeTo(500, 0.7)
-           .fadeTo(500, 0.2)
-           .fadeTo(500, 0.7);
+    $(this).hide(5000).show(3000);
 });
 
+$("#clients h2").on("click", function(){
+    $("#clients blockquote").toggle(3000);
+});
