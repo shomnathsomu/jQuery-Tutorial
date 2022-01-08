@@ -106,6 +106,22 @@ input, select {
 /* //////////////////// START HEADER STYLING //////////////// */
 /* ////////////////////////////////////////////////////////// */
 
+.slide-button-up, 
+.slide-button-down,
+.slide-button-toggle{
+    clear: right;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ccc;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    color: #333;
+    cursor: pointer;
+    width: 140px;
+    text-align: center;
+    margin: 10px auto;
+}
+
 .wrapper {
     width: 100%;
     max-width: 960px;
