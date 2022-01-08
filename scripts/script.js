@@ -228,10 +228,29 @@ var tweetText = "Hello world!";
 // ////////// Hide and Show Elements //////////
 // ////////////////////////////////////////////
 
-$("section > h2").on("click", function(){
-    $(this).hide(5000).show(3000);
+// $("section > h2").on("click", function(){
+//     $(this).hide(5000).show(3000);
+// });
+
+// $("#clients h2").on("click", function(){
+//     $("#clients blockquote").toggle(3000);
+// });
+
+// ////////////////////////////////////////////
+// //////////// Sliding Elements //////////////
+// ////////////////////////////////////////////
+
+$(".slide-button-up").on("click", function(){
+    $("#lead-banner").slideUp(3000);
 });
 
-$("#clients h2").on("click", function(){
-    $("#clients blockquote").toggle(3000);
+$(".slide-button-down").on("click", function(){
+    $("#lead-banner").slideDown(3000, function(){
+        alert("Sliding completed!");
+    });
 });
+
+$(".slide-button-toggle").on("click", function(){
+    $("#lead-banner").slideToggle(3000);
+});
+
