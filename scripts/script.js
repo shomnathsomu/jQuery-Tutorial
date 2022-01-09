@@ -240,17 +240,37 @@ var tweetText = "Hello world!";
 // //////////// Sliding Elements //////////////
 // ////////////////////////////////////////////
 
-$(".slide-button-up").on("click", function(){
-    $("#lead-banner").slideUp(3000);
-});
+// $(".slide-button-up").on("click", function(){
+//     $("#lead-banner").slideUp(3000);
+// });
 
-$(".slide-button-down").on("click", function(){
-    $("#lead-banner").slideDown(3000, function(){
-        alert("Sliding completed!");
+// $(".slide-button-down").on("click", function(){
+//     $("#lead-banner").slideDown(3000, function(){
+//         alert("Sliding completed!");
+//     });
+// });
+
+// $(".slide-button-toggle").on("click", function(){
+//     $("#lead-banner").slideToggle(3000);
+// });
+
+// ////////////////////////////////////////////
+// //////////// Fading Animation //////////////
+// ////////////////////////////////////////////
+
+var allQuotes = $("blockquote");
+var currentQuote = 0;
+
+function changeQuote(){
+    $(allQuotes[currentQuote]).fadeOut(200, function(){
+        if(currentQuote == allQuotes.length - 1) {
+            currentQuote = 0;
+        }
+        else {
+            currentQuote++;
+        }
+        $(allQuotes[currentQuote]).fadeIn(200);
     });
-});
+}
 
-$(".slide-button-toggle").on("click", function(){
-    $("#lead-banner").slideToggle(3000);
-});
-
+var quoteTimer = setInterval(changeQuote, 5000);
