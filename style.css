@@ -318,6 +318,19 @@ section::after {
 /* ///////////////// STYLING CLIENTS ////////////////////// */
 /* //////////////////////////////////////////////////////// */
 
+blockquote {
+    display: none;
+}
+
+blockquote:first-of-type {
+    display: block;
+}
+
+#clients h3 {
+    position: relative;
+    left: 10%;
+}
+
 #clients, #contact, #tweets {
     border-top: 1px solid #cccccc;
     padding-top: 30px;
