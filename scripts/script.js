@@ -258,19 +258,48 @@ var tweetText = "Hello world!";
 // //////////// Fading Animation //////////////
 // ////////////////////////////////////////////
 
-var allQuotes = $("blockquote");
-var currentQuote = 0;
+// var allQuotes = $("blockquote");
+// var currentQuote = 0;
 
-function changeQuote(){
-    $(allQuotes[currentQuote]).fadeOut(200, function(){
-        if(currentQuote == allQuotes.length - 1) {
-            currentQuote = 0;
-        }
-        else {
-            currentQuote++;
-        }
-        $(allQuotes[currentQuote]).fadeIn(200);
-    });
-}
+// function changeQuote(){
+//     $(allQuotes[currentQuote]).fadeOut(200, function(){
+//         if(currentQuote == allQuotes.length - 1) {
+//             currentQuote = 0;
+//         }
+//         else {
+//             currentQuote++;
+//         }
+//         $(allQuotes[currentQuote]).fadeIn(200);
+//     });
+// }
 
-var quoteTimer = setInterval(changeQuote, 5000);
+// var quoteTimer = setInterval(changeQuote, 5000);
+
+// ////////////////////////////////////////////
+// //////////// Sliding Animation //////////////
+// ////////////////////////////////////////////
+
+var items = $("#points-of-sale li");
+
+items.on("click", function(){
+    $(this).find("p").slideToggle(500);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
