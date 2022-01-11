@@ -297,6 +297,7 @@ section::after {
     margin: 0 10%;
     font-size: 14px;
     line-height: 1.4em;
+    display: none;
 }
 
 /* #points-of-sale {
