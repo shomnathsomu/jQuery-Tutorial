@@ -321,6 +321,7 @@ section::after {
 
 blockquote {
     display: none;
+    width: 90% !important;
 }
 
 blockquote:first-of-type {
@@ -369,6 +370,32 @@ blockquote:first-of-type {
     background: url(./images/quotation-icon.png) no-repeat top left;
     background-size: 50px;
 }
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    /* width: 100%; */
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
 
 /* ///////////////////////////////////////////////////////// */
 /* ///////////////// STYLING CONTACT ////////////////////// */
