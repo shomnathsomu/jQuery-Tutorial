@@ -285,6 +285,10 @@ items.on("click", function(){
     $(this).find("p").slideToggle(500);
 });
 
+$(function(){
+    $(".rslides").responsiveSlides();
+});
+
 
 
 
